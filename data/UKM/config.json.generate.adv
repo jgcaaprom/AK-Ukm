@@ -160,7 +160,7 @@ cat << CTAG
 				}},
 					{ SCheckBox:{
 						label:"Enable",
-						description:"Arch Power uses arch dependent power functions to be used instead of generic high resolution timer ticks and double ticks to reflect the relative capacity of each core.",
+						description:"Arch Power use arch dependent power functions to be used instead of generic high resolution timer ticks and double ticks for reflect the relative capacity of each core.",
 						default:'$APOWER',
 						action:"generic /sys/kernel/sched/arch_power"
 					}},'
