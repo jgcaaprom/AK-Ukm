@@ -84,24 +84,6 @@ cat << CTAG
 			}},
 			{ STitleBar:{
 				title:{
-					en:"SOC Binning",
-					es:"SOC Binning"
-				}
-			}},
-				{ SDescription:{
-					description:"ACPU PVS:`$BB cat $UKM/debug/pvs_bin`"
-				}},
-				{ SDescription:{
-					description:"Values: 1 (Slow), 2 (Nominal), 3 (Fast), 4 (Faster). The higher the binning, the lower voltages your device can run."
-				}},
-				{ SDescription:{
-					description:"SPEED BIN:`$BB cat $UKM/debug/speed_bin`"
-				}},
-				{ SDescription:{
-					description:"Values: from 0 (Lowest) to 14 (Higher). The higher the speed, the higher frequencies your device can run (greater than 1512 MHz)."
-				}},
-			{ STitleBar:{
-				title:{
 					en:"Last KMSG",
 					es:"Ultimo KMSG"
 				}

@@ -356,4 +356,7 @@ case "$1" in
 			$BB echo -ne "\x$setstate" | $BB dd obs=1 count=1 seek=$offset of=$block 2> /dev/null;
 		fi;
 	;;
+	LiveCpuPvsLevel)
+		$BB echo "Speed Bin@n`$BB cat /sys/module/clock_krait_8974/parameters/pvs_level`"
+	;;
 esac;
