@@ -85,8 +85,8 @@ cat << CTAG
 				`if [ -f "/sys/module/logger/parameters/log_mode" ]; then
 				LOGMODE=\`$BB cat /sys/module/logger/parameters/log_mode\`
 					$BB echo '{ SOptionList:{
-						title:"Log Mode",
-						description:"Allows you to toggle the log mode.",
+						title:"Logcat Mode",
+						description:"Allows you to toggle the logcat mode.",
 						default:'$LOGMODE',
 						action:"generic /sys/module/logger/parameters/log_mode",
 						values:{
