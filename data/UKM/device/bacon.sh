@@ -15,12 +15,6 @@ case "$1" in
 			$BB echo "\"$CPUGOV\",";
 		done;
 	;;
-	DebugPVS)
-		$BB echo "PVS bin";
-	;;
-	DebugSPEED)
-		$BB echo "Speed bin";
-	;;
 	DefaultCPUGovernor)
 		$BB echo `$BB cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor`
 	;;
@@ -357,6 +351,6 @@ case "$1" in
 		fi;
 	;;
 	LiveCpuPvsLevel)
-		$BB echo "Speed Bin@n`$BB cat /sys/module/clock_krait_8974/parameters/pvs_level`"
+		$BB echo "Pvs Bin: `$BB cat /sys/module/clock_krait_8974/parameters/pvs_level`@nSpeed Bin: `$BB cat /sys/module/clock_krait_8974/parameters/speed_level`"
 	;;
 esac;
