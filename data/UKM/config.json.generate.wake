@@ -307,6 +307,18 @@ cat << CTAG
 						action:"generic /proc/touchpanel/double_tap_enable"
 					}},'
 			fi`
+			`if [ -f "/proc/touchpanel/sweep_wake_enable" ]; then
+			STWOPO=\`$BB cat /proc/touchpanel/sweep_wake_enable\`
+				$BB echo '{ SPane:{
+					title:"Sweep2Wake"
+				}},
+					{ SCheckBox:{
+						label:"Enable",
+						description:"Allows you to wake the device by sweep the screen (Causes more battery drain while in pocket).",
+						default:'$STWOPO',
+						action:"generic /proc/touchpanel/sweep_wake_enable"
+					}},'
+			fi`
 			`if [ -f "/proc/touchpanel/camera_enable" ]; then
 			CTCOPO=\`$BB cat /proc/touchpanel/camera_enable\`
 				$BB echo '{ SPane:{
