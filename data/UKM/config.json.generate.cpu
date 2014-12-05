@@ -287,7 +287,17 @@ cat << CTAG
 										SGeneric: { title:"@BASENAME" }
 									}
 								},
-								exclude: [ "boostpulse", "sampling_rate_min" ]
+								exclude: [
+									"boostpulse",
+									"cpu_utilization",
+									"sampling_rate_min",
+									"up_threshold_h",
+									"up_threshold_l",
+									"multi_phase_freq_tbl",
+									"profile_list",
+									"version_profiles",
+									"profile"
+								]
 							},
 						}
 					},
