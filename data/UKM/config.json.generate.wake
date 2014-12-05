@@ -302,7 +302,7 @@ cat << CTAG
 				}},
 					{ SCheckBox:{
 						label:"Enable",
-						description:"Allows you to wake the device by double tapping the screen (Causes more battery drain while in pocket).",
+						description:"Allows you to wake the device by double tapping the screen.",
 						default:'$DTOPO',
 						action:"generic /proc/touchpanel/double_tap_enable"
 					}},'
@@ -314,7 +314,7 @@ cat << CTAG
 				}},
 					{ SCheckBox:{
 						label:"Enable",
-						description:"Allows you to wake the device by sweep the screen (Causes more battery drain while in pocket).",
+						description:"Allows you to wake the device by sweep the screen.",
 						default:'$STWOPO',
 						action:"generic /proc/touchpanel/sweep_wake_enable"
 					}},'
