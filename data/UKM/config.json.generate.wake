@@ -334,6 +334,18 @@ cat << CTAG
 						action:"generic /proc/touchpanel/sweep_wake_enable"
 					}},'
 			fi`
+			`if [ -f "/proc/touchpanel/sweep_vol_enable" ]; then
+			STVOPO=\`$BB cat /proc/touchpanel/sweep_vol_enable\`
+				$BB echo '{ SPane:{
+					title:"Sweep2Volume"
+				}},
+					{ SCheckBox:{
+						label:"Enable",
+						description:"Allows you to increase/decrease volume by sweep the screen.",
+						default:'$STVOPO',
+						action:"generic /proc/touchpanel/sweep_vol_enable"
+					}},'
+			fi`
 			`if [ -f "/proc/touchpanel/camera_enable" ]; then
 			CTCOPO=\`$BB cat /proc/touchpanel/camera_enable\`
 				$BB echo '{ SPane:{
