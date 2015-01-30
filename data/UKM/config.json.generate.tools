@@ -37,6 +37,15 @@ cat << CTAG
 					values:[ Enforcing, Permissive
 					],
 				}},
+			`if [ -f "/sys/module/selinux/parameters/force_audit" ]; then
+				FAUDIT=\`bool /sys/module/selinux/parameters/force_audit\`;
+					$BB echo '{ SCheckBox:{
+							label:"Enable",
+							description:"Force Audit to be Enabled for helping into debugging selinux driver.",
+							default:'$FAUDIT',
+							action:"boolean /sys/module/selinux/parameters/force_audit"
+						}},'
+			fi`
 			`if [ 1 == 1 ]; then
 				DB=/data/data/com.android.providers.settings/databases;
 				cd $DB;
