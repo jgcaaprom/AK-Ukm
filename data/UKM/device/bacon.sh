@@ -15,12 +15,6 @@ case "$1" in
 			$BB echo "\"$CPUGOV\",";
 		done;
 	;;
-	DebugPVS)
-		$BB echo "PVS bin";
-	;;
-	DebugSPEED)
-		$BB echo "Speed bin";
-	;;
 	DefaultCPUGovernor)
 		$BB echo `$BB cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor`
 	;;
