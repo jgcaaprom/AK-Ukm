@@ -496,6 +496,9 @@ cat << CTAG
 							action:"generic '$BHC'/pause",
 					}},'
 				fi
+				$BB echo '{ SPane:{
+						title:"MSM MPDecision Thresholds"
+					}},'
 				if [ -f "$BHC/nwns_threshold_0" ]; then
 				NWNS0=\`$BB cat $BHC/nwns_threshold_0\`
 					$BB echo '{ SSeekBar:{
