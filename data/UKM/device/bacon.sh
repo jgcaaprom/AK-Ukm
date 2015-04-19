@@ -362,4 +362,8 @@ case "$1" in
 		LiveCpuPvsLevel)
 			$BB echo "Pvs Bin: `$BB cat /sys/module/clock_krait_8974/parameters/pvs_level`@nSpeed Bin: `$BB cat /sys/module/clock_krait_8974/parameters/speed_level`"
 	;;
+		LiveChargeCurrent)
+			$BB echo "mA: `$BB cat /sys/kernel/charge_levels/charge_info`"
+	;;
+
 esac;
