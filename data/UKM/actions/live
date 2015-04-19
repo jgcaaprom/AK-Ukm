@@ -39,4 +39,7 @@ case $1 in
 	CpuPvsLevel)
 		$BB echo `sh $DEVICE LiveCpuPvsLevel`;
 	;;
+	ChargeCurrent)
+		$BB echo `sh $DEVICE LiveChargeCurrent`;
+	;;
 esac;
