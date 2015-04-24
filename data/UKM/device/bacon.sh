@@ -93,9 +93,7 @@ case "$1" in
 		done;
 	;;
 	GPUGovernorList)
-		for GPUGOV in `$BB cat /sys/devices/fdb00000.qcom,kgsl-3d0/devfreq/fdb00000.qcom,kgsl-3d0/available_governors`; do
-			$BB echo "\"$GPUGOV\",";
-		done;
+		$BB echo "msm-adreno-tz","performance";
 	;;
 	GPUPowerLevel)
 		for GPUFREQ in `$BB cat /sys/devices/fdb00000.qcom,kgsl-3d0/devfreq/fdb00000.qcom,kgsl-3d0/available_frequencies | $BB tr ' ' '\n' | $BB sort -u` ; do
