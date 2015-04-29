@@ -367,6 +367,6 @@ case "$1" in
 			$BB echo "`$BB uname -r`"
 	;;
 		LiveInfoCurrent)
-			$BB echo "Version: 3.8.1.9 Special Edition"
+			$BB echo "Version: 3.8.2.0 Special Edition"
 	;;
 esac;
