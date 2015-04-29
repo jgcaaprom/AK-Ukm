@@ -363,5 +363,10 @@ case "$1" in
 		LiveChargeCurrent)
 			$BB echo "mA: `$BB cat /sys/kernel/charge_levels/charge_info`"
 	;;
-
+		LiveKernelCurrent)
+			$BB echo "`$BB uname -r`"
+	;;
+		LiveInfoCurrent)
+			$BB echo "Version: 3.8.1.9 Special Edition"
+	;;
 esac;
