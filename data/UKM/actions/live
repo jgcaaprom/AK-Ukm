@@ -44,4 +44,25 @@ case $1 in
 	;;
 		$BB echo `sh $DEVICE LiveChargeCurrent`;
 	;;
+	UnUsedGpu)
+		$BB echo `sh $DEVICE LiveUnUsedGpu`;
+	;;
+	ChargeCurrent)
+		$BB echo `sh $DEVICE LiveChargeCurrent`;
+	;;
+	KernelCurrent)
+		$BB echo `sh $DEVICE LiveKernelCurrent`;
+	;;
+	InfoCurrent)
+		$BB echo `sh $DEVICE LiveInfoCurrent`;
+	;;
+	BrickedHotplug)
+		$BB echo `sh $DEVICE LiveBrickedHotplug`;
+	;;
+	IntellidHotplug)
+		$BB echo `sh $DEVICE LiveIntellidHotplug`;
+	;;
+	MsmHotplug)
+		$BB echo `sh $DEVICE LivedMsmHotplug`;
+	;;
 esac;
