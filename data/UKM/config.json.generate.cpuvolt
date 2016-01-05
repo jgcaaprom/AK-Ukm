@@ -40,8 +40,8 @@ cat << CTAG
 								default:'$VOLT',
 								action:"cpuvolt '$CPUFREQ'",
 								unit:" uV",
-								min:500000,
-								max:1400000,
+								min:600000,
+								max:1300000,
 								step:500
 							}},'
 						done < /sys/devices/system/cpu/cpufreq/vdd_table/vdd_levels
